@@ -23,4 +23,9 @@ public class Tasks {
         System.out.println("I'LL RUN EVERY 1 MINUTE. LAST RUN ON " + new Date());
     }
 
+    @Scheduled(cron = "0 29 21 * * ?")
+    public void taskHourOfDay() {
+        System.out.println("I'LL RUN EVERY DAY AT 21:29H. LAST RUN ON " + new Date());
+    }
+
 }
